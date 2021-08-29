@@ -55,3 +55,30 @@
   color: white;
   font-size: 16pt;
 }
+
+/* Languages Styles */
+.languages-container {
+  text-align: center;
+  background-color: blue;
+  padding-bottom: 4%;
+}
+
+.languages-container h1 {
+  color: white;
+}
+
+.carousel {
+  background-color: black;
+  padding: 0 1%;
+}
+
+.carousel-img {
+  padding: 60px 0 40px;
+  width: 10%;
+}
+
+.carousel-caption {
+  position: relative;
+  left: 0;
+  bottom: 20;
+}
