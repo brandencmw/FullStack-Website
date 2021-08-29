@@ -1,0 +1,57 @@
+/* Navbar styles */
+.navbar {
+  padding: 1% 5%;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.nav-link {
+  margin-left: 5%;
+}
+
+.navbar-collapse {
+  text-align: right;
+}
+
+@media (max-width: 975px) {
+  .uncollapsed li {
+    display: none;
+  }
+}
+
+/* Intro section styles */
+.intro-container {
+  background-image: url("../images/intro-background.jpg");
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.summary-box {
+  text-align: left;
+  width: auto;
+  height: auto;
+  background-color: black;
+  border: 5px solid white;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 0 5%;
+}
+
+.img-branden {
+  margin: 2% 0;
+  border-radius: 100%;
+  border: 5px;
+  border-style: solid;
+  border-color: white;
+  height: 20rem;
+}
+
+.summary-box p {
+  text-align: center;
+  color: white;
+  font-size: 16pt;
+}
