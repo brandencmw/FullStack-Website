@@ -31,10 +31,9 @@
 }
 
 .summary-box {
-  text-align: left;
   width: auto;
   height: auto;
-  background-color: black;
+  background-color: #323330;
   border: 5px solid white;
   border-radius: 25px;
   padding: 10px;
@@ -59,16 +58,16 @@
 /* Languages Styles */
 .languages-container {
   text-align: center;
-  background-color: blue;
+  background-color: #f7e119;
   padding-bottom: 4%;
 }
 
 .languages-container h1 {
-  color: white;
+  color: #f3eff5;
 }
 
 .carousel {
-  background-color: black;
+  background-color: #323330;
   padding: 0 1%;
 }
 
@@ -81,4 +80,36 @@
   position: relative;
   left: 0;
   bottom: 20;
+}
+
+/* Tech section styles */
+.tech-section {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+}
+
+.card {
+  margin: 10px 10px;
+  width: 18rem;
+  padding: auto;
+  align-items: center;
+  background-color: #f8f8ff;
+  color: #323330;
+  border-radius: 25px;
+}
+
+.card-img-top {
+  margin-top: 10px;
+  height: 3em;
+  width: auto;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
 }

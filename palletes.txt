@@ -1,0 +1,7 @@
+#Javascript Pallete
+Primary: #F7E119 Yellow Pantone
+Secondary: #BAA30C
+
+
+Dark: #323330 Jet
+White: #F8F8FF
