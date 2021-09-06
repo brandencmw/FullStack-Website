@@ -110,7 +110,7 @@
 /* Footer styles */
 footer {
   text-align: center;
-  margin: 20px 0;
+  padding: 15px 0;
 }
 
 .social-btn {
@@ -206,4 +206,18 @@ footer {
 .vba-secondary {
   transition: 0.5s;
   background-color: #6383c2;
+}
+
+/* Contact Page Styles */
+.contact-form {
+  margin: 0 7% 3%;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 5px;
 }

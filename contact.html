@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Branden Wheeler</title>
+    <!-- Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="public/css/styles.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg js-primary">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">Branden Wheeler</a>
+
+        <!-- Uncollapsed content -->
+        <ul class="navbar-nav ms-2 uncollapsed">
+          <li class="nav-item">
+            <a href="" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Languages</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Technologies</a>
+          </li>
+        </ul>
+
+        <!-- Hamburger menu button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#additionalPageMenu"
+          aria-controls="additionalPageMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsed Content -->
+        <div class="collapse navbar-collapse" id="additionalPageMenu">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h2 class="heading">Contact me!</h2>
+    <h4 class="heading">I'm friendly I promise</h4>
+    <!-- Contact form -->
+    <form action="/" method="POST" class="contact-form">
+      <label for="email" class="form-label">Email Address</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="example@domain.com"
+        class="form-control"
+      />
+      <label for="title" class="form-label">Title</label>
+      <input id="title" type="text" class="form-control" />
+      <label for="content" class="form-label">Content</label>
+      <textarea
+        name="content"
+        id="content"
+        rows="5"
+        class="form-control"
+      ></textarea>
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+
+    <!-- Footer with links -->
+    <footer class="js-primary">
+      <a type="button" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+      <a type="button" class="social-btn"><i class="fab fa-instagram"></i></a>
+      <a type="button" class="social-btn"><i class="fas fa-envelope"></i></a>
+      <p>Copyright 2021 Branden Wheeler</p>
+    </footer>
+  </body>
+</html>

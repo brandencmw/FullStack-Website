@@ -1,0 +1,23 @@
+{
+  "name": "fullstack-website",
+  "version": "1.0.0",
+  "description": "My fullstack personal website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandencmw/FullStack-Website.git"
+  },
+  "author": "Branden Wheeler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandencmw/FullStack-Website/issues"
+  },
+  "homepage": "https://github.com/brandencmw/FullStack-Website#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
