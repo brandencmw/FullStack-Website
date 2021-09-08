@@ -10,7 +10,8 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="public/css/styles.css" />
+    <link rel="stylesheet" href="/css/languages.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
 
     <!-- Font Awesome -->
     <link
@@ -29,13 +30,13 @@
         <!-- Uncollapsed content -->
         <ul class="navbar-nav ms-2 uncollapsed">
           <li class="nav-item">
-            <a href="" class="nav-link">Home</a>
+            <a href="/" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Languages</a>
+            <a href="#language-section" class="nav-link">Languages</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Technologies</a>
+            <a href="#tech-section" class="nav-link">Technologies</a>
           </li>
         </ul>
 
@@ -59,7 +60,7 @@
               <a class="nav-link" href="#">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="/contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -69,12 +70,12 @@
     <!-- Intro Section -->
     <div class="intro-container">
       <img
-        src="public/images/profile-picture.jpg"
+        src="/images/profile-picture.jpg"
         alt="picture of Branden Wheeler"
         class="img-branden"
       />
-      <div class="summary-box" style="background-color: #ecebeb">
-        <p style="color: black">
+      <div class="summary-box">
+        <p>
           Hey there! My name is <span class="name">Branden Wheeler.</span> I'm a
           3<sup>rd</sup> year business administration and computer science
           student at
@@ -88,12 +89,11 @@
     </div>
 
     <!-- Languages Section -->
-    <div class="languages-container js-primary">
+    <div class="languages-container js-primary" id="language-section">
       <h1>My Languages</h1>
       <div
         id="languagesCarousel"
         class="carousel slide carousel-dark"
-        style="background-color: #ecebeb"
         data-bs-ride="carousel"
         data-bs-interval="false"
       >
@@ -153,83 +153,67 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="public/images/logos/js-logo.png"
+              src="/images/logos/js-logo.png"
               class="carousel-img"
-              alt=""
+              alt="Javascript Logo"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>JavaScript</h5>
-            </div>
+            <h5>JavaScript</h5>
           </div>
           <div class="carousel-item">
             <img
-              src="public/images/logos/html-logo.png"
+              src="/images/logos/html-logo.png"
               class="carousel-img"
-              alt=""
+              alt="HTML 5 Logo"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>HTML</h5>
-            </div>
+            <h5>HTML</h5>
           </div>
           <div class="carousel-item">
             <img
-              src="public/images/logos/css-logo.png"
+              src="/images/logos/css-logo.png"
               class="carousel-img"
-              alt=""
+              alt="CSS 3 Logo"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>CSS</h5>
-            </div>
+            <h5>CSS</h5>
           </div>
           <div class="carousel-item">
             <img
-              src="public/images/logos/python-logo.png"
+              src="/images/logos/python-logo.png"
               class="carousel-img"
               alt=""
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Python</h5>
-            </div>
+            <h5>Python</h5>
           </div>
           <div class="carousel-item">
             <img
-              src="public/images/logos/java-logo.png"
+              src="/images/logos/java-logo.png"
               class="carousel-img"
-              alt=""
+              alt="Python Logo"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Java</h5>
-            </div>
+            <h5>Java</h5>
           </div>
           <div class="carousel-item">
             <img
-              src="public/images/logos/c-logo.png"
+              src="/images/logos/c-logo.png"
               class="carousel-img"
-              alt=""
+              alt="Java Logo"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>C</h5>
-            </div>
+            <h5>C</h5>
           </div>
           <div class="carousel-item">
             <img
-              src="public/images/logos/sql-logo.png"
+              src="/images/logos/sql-logo.png"
               class="carousel-img"
-              alt=""
+              alt="SQL Logo"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>SQL</h5>
-            </div>
+            <h5>SQL</h5>
           </div>
           <div class="carousel-item">
             <img
-              src="public/images/logos/vba-logo.png"
+              src="/images/logos/vba-logo.png"
               class="carousel-img"
-              alt=""
+              alt="VBA Logo"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>VBA</h5>
-            </div>
+            <h5>VBA</h5>
           </div>
           <button
             class="carousel-control-prev"
@@ -255,12 +239,12 @@
       </div>
     </div>
 
-    <section class="tech-section">
+    <section class="tech-section" id="tech-section">
       <div class="row js-secondary">
         <h2>Python Packages</h2>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/generic-logo.png"
+            src="/images/logos/generic-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -275,7 +259,7 @@
         </div>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/matplotlib-logo.png"
+            src="/images/logos/matplotlib-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -290,7 +274,7 @@
         </div>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/pandas-logo.png"
+            src="/images/logos/pandas-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -305,7 +289,7 @@
         </div>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/generic-logo.png"
+            src="/images/logos/generic-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -320,7 +304,7 @@
         </div>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/pygame-logo.png"
+            src="/images/logos/pygame-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -335,7 +319,7 @@
         </div>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/selenium-logo.png"
+            src="/images/logos/selenium-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -354,7 +338,7 @@
         <h2>Frameworks</h2>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/bootstrap-logo.png"
+            src="/images/logos/bootstrap-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -369,7 +353,22 @@
         </div>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/nodejs-logo.png"
+            src="/images/logos/express-logo.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Express.js</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
+              fermentum iaculis eu non diam.
+            </p>
+          </div>
+        </div>
+        <div class="card col-lg-4 col-sm-6">
+          <img
+            src="/images/logos/nodejs-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -384,7 +383,7 @@
         </div>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/react-logo.png"
+            src="/images/logos/react-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -403,7 +402,7 @@
         <h2>Security and Authentication</h2>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/generic-logo.png"
+            src="/images/logos/generic-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -418,7 +417,7 @@
         </div>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/oauth-logo.png"
+            src="/images/logos/oauth-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -433,7 +432,7 @@
         </div>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/passport-logo.png"
+            src="/images/logos/passport-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -452,7 +451,7 @@
         <h2>Database Software</h2>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/dynamodb-logo.png"
+            src="/images/logos/dynamodb-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -467,7 +466,7 @@
         </div>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/mariadb-logo.png"
+            src="/images/logos/mariadb-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -482,7 +481,7 @@
         </div>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/mongodb-logo.png"
+            src="/images/logos/mongodb-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -497,7 +496,22 @@
         </div>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/firestore-logo.png"
+            src="/images/logos/mongoose-logo.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Mongoose</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
+              fermentum iaculis eu non diam.
+            </p>
+          </div>
+        </div>
+        <div class="card col-lg-4 col-sm-6">
+          <img
+            src="/images/logos/firestore-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -516,7 +530,7 @@
         <h2>IDEs / Code Editors</h2>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/atom-logo.png"
+            src="/images/logos/atom-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -531,7 +545,7 @@
         </div>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/eclipse-logo.png"
+            src="/images/logos/eclipse-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -546,7 +560,7 @@
         </div>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/vscode-logo.png"
+            src="/images/logos/vscode-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -565,7 +579,7 @@
         <h2>Cloud Hosting</h2>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/aws-logo.png"
+            src="/images/logos/aws-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -580,7 +594,7 @@
         </div>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/firestore-logo.png"
+            src="/images/logos/firestore-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -595,7 +609,7 @@
         </div>
         <div class="card col-lg-4 col-sm-6">
           <img
-            src="/public/images/logos/heroku-logo.png"
+            src="/images/logos/heroku-logo.png"
             class="card-img-top"
             alt="..."
           />
@@ -609,18 +623,98 @@
           </div>
         </div>
       </div>
+      <div class="row js-secondary">
+        <h2>Other Software/Technologies</h2>
+        <div class="card col-lg-4 col-sm-6">
+          <img
+            src="/images/logos/ejs-logo.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">EJS</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
+              fermentum iaculis eu non diam.
+            </p>
+          </div>
+        </div>
+        <div class="card col-lg-4 col-sm-6">
+          <img
+            src="/images/logos/figma-logo.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Figma</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
+              fermentum iaculis eu non diam.
+            </p>
+          </div>
+        </div>
+        <div class="card col-lg-4 col-sm-6">
+          <img
+            src="/images/logos/postman-logo.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Postman</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
+              fermentum iaculis eu non diam.
+            </p>
+          </div>
+        </div>
+        <div class="card col-lg-4 col-sm-6">
+          <img
+            src="/images/logos/robo3t-logo.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Robo3T</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
+              fermentum iaculis eu non diam.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="js-primary">
-      <a type="button" class="social-btn"><i class="fab fa-facebook-f"></i></a>
-      <a type="button" class="social-btn"><i class="fab fa-instagram"></i></a>
-      <a type="button" class="social-btn"><i class="fas fa-envelope"></i></a>
+      <a
+        type="button"
+        class="social-btn"
+        href="https://www.linkedin.com/in/brandenwheeler/"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <a type="button" class="social-btn" href="https://github.com/brandencmw"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a
+        type="button"
+        class="social-btn"
+        href="https://www.facebook.com/branden.wheeler.714"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+      <a
+        type="button"
+        class="social-btn"
+        href="https://www.instagram.com/brandencmw/"
+        ><i class="fab fa-instagram"></i
+      ></a>
       <p>Copyright 2021 Branden Wheeler</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="server.js"></script>
-    <script src="script.js"></script>
+    <script src="/javascript/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"

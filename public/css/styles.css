@@ -1,3 +1,13 @@
+/* General Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #323330;
+}
+
 /* Navbar styles */
 .navbar {
   padding: 1% 5%;
@@ -5,12 +15,10 @@
 .navbar-brand {
   font-size: 1.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: #323330;
 }
 
 .nav-link {
   margin-left: 5%;
-  color: #323330;
 }
 
 .navbar-collapse {
@@ -38,10 +46,16 @@
   width: auto;
   height: auto;
   background-color: #ecebec;
-  border: 5px solid black;
+  border: 5px solid #323330;
   border-radius: 25px;
-  padding: 10px;
-  margin: 0 5%;
+  margin: 5%;
+  padding: 5px;
+}
+
+.summary-box p {
+  text-align: center;
+  color: #323330;
+  font-size: 16pt;
 }
 
 .img-branden {
@@ -49,14 +63,8 @@
   border-radius: 100%;
   border: 5px;
   border-style: solid;
-  border-color: white;
+  border-color: #323330;
   height: 20rem;
-}
-
-.summary-box p {
-  text-align: center;
-  color: white;
-  font-size: 16pt;
 }
 
 /* Languages Styles */
@@ -71,14 +79,19 @@
 }
 
 .carousel-img {
-  padding: 60px 0 40px;
-  width: 10%;
+  height: 150px;
+  margin: 10px 0;
+  width: auto;
 }
 
-.carousel-caption {
-  position: relative;
-  left: 0;
-  bottom: 20;
+.carousel-item {
+  padding: 1%;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.carousel-item h5 {
+  color: #323330;
 }
 
 /* Tech section styles */
@@ -89,22 +102,27 @@
 .row {
   display: flex;
   justify-content: space-evenly;
-  padding: 30px 0;
+  padding: 3%;
+  margin: 0;
 }
 
 .card {
-  margin: 30px 0;
+  margin: 30px 10px;
   width: 18rem;
   padding: auto;
   align-items: center;
   background-color: #f8f8ff;
-  color: #323330;
   border-radius: 25px;
+}
+
+.card * {
+  color: #323330;
 }
 
 .card-img-top {
   padding-top: 25px;
-  width: 40%;
+  width: auto;
+  height: 100px;
 }
 
 /* Footer styles */
@@ -114,98 +132,7 @@ footer {
 }
 
 .social-btn {
-  margin: 0 20px;
-}
-
-/* Individual Language Styles */
-/* Javascript Styles */
-.js-primary {
-  transition: 0.5s;
-  background-color: #f7e119;
-  color: #323330;
-}
-
-.js-secondary {
-  transition: 0.5s;
-  background-color: #baa30c;
-  color: #323330;
-}
-
-/* HTML Styles */
-.html-primary {
-  transition: 0.5s;
-  background-color: #e65326;
-}
-
-.html-secondary {
-  transition: 0.5s;
-  background-color: #ea9172;
-}
-
-/* CSS Styles */
-.css-primary {
-  transition: 0.5s;
-  background-color: #047ec6;
-}
-
-.css-secondary {
-  transition: 0.5s;
-  background-color: #61c0ee;
-}
-
-/* Python Styles */
-.python-primary {
-  transition: 0.5s;
-  background-color: #fcd441;
-}
-
-.python-secondary {
-  transition: 0.5s;
-  background-color: #3474a6;
-}
-
-/* Java Styles */
-.java-primary {
-  transition: 0.5s;
-  background-color: #dc3b0c;
-}
-
-.java-secondary {
-  transition: 0.5s;
-  background-color: #74a4fc;
-}
-
-/* C Styles */
-.c-primary {
-  transition: 0.5s;
-  background-color: #044f8f;
-}
-
-.c-secondary {
-  transition: 0.5s;
-  background-color: #639bd3;
-}
-
-/* SQL Styles */
-.sql-primary {
-  transition: 0.5s;
-  background-color: #cc8c2c;
-}
-
-.sql-secondary {
-  transition: 0.5s;
-  background-color: #04648c;
-}
-
-/* VBA Styles */
-.vba-primary {
-  transition: 0.5s;
-  background-color: #90247e;
-}
-
-.vba-secondary {
-  transition: 0.5s;
-  background-color: #6383c2;
+  margin: 0 10px;
 }
 
 /* Contact Page Styles */

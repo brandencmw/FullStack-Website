@@ -1,0 +1,31 @@
+#Javascript Palette
+Primary: #F7E119 Yellow Pantone
+Secondary: #BAA30C Old Gold
+
+#HTML Palette
+Primary: #E65326 Flame
+Secondary: #EA9172 Dark Salmon
+
+#CSS Pallete
+Primary: #047EC6 Star Command Blue
+Secondary: #61C0EE Capri
+
+#Python Palette
+Primary: #FCD441 Mustard
+Secondary: #3474A6 Spanish Blue
+
+#Java Palette
+Primary: #FF686B Light Coral
+Secondary: #74A4fC Little Boy Blue
+
+#SQL Palette
+Primary: #CC8C2C Harvest Gold
+Secondary: #04648C Blue Sapphire
+
+#VBA Palette
+Primary: #90247E Mardi Gras
+Secondary: #6383C2 Glaucous
+
+#General Colours
+Dark: #323330 Jet
+White: #F8F8FF Ghost White

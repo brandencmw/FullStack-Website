@@ -1,0 +1,120 @@
+/* Individual Language Styles */
+/* Javascript Styles */
+.js-primary {
+  transition: 0.5s;
+  background-color: #f7e119;
+}
+
+.js-primary * {
+  color: #323330;
+}
+
+.js-secondary {
+  transition: 0.5s;
+  background-color: #baa30c;
+}
+
+/* HTML Styles */
+.html-primary {
+  transition: 0.5s;
+  background-color: #e65326;
+}
+
+.html-primary * {
+  color: #f8f8ff;
+}
+
+.html-secondary {
+  transition: 0.5s;
+  background-color: #ea9172;
+}
+
+/* CSS Styles */
+.css-primary {
+  transition: 0.5s;
+  background-color: #047ec6;
+}
+
+.css-primary * {
+  color: #f8f8ff;
+}
+
+.css-secondary {
+  transition: 0.5s;
+  background-color: #61c0ee;
+}
+
+/* Python Styles */
+.python-primary {
+  transition: 0.5s;
+  background-color: #fcd441;
+}
+
+.python-primary * {
+  color: #323330;
+}
+
+.python-secondary {
+  transition: 0.5s;
+  background-color: #3474a6;
+}
+
+.python-secondary * {
+  color: #f8f8ff;
+}
+
+/* Java Styles */
+.java-primary {
+  transition: 0.5s;
+  background-color: #ff686b;
+}
+
+.java-primary * {
+  color: #323330;
+}
+
+.java-secondary {
+  transition: 0.5s;
+  background-color: #74a4fc;
+}
+
+/* C Styles */
+.c-primary {
+  transition: 0.5s;
+  background-color: #044f8f;
+}
+
+.c-primary * {
+  color: #f8f8ff;
+}
+
+.c-secondary {
+  transition: 0.5s;
+  background-color: #639bd3;
+}
+
+/* SQL Styles */
+.sql-primary {
+  transition: 0.5s;
+  background-color: #cc8c2c;
+}
+
+.sql-secondary {
+  transition: 0.5s;
+  background-color: #04648c;
+}
+
+/* VBA Styles */
+.vba-primary {
+  transition: 0.5s;
+  background-color: #90247e;
+}
+
+.vba-primary * {
+  color: #f8f8ff;
+}
+
+.vba-secondary {
+  transition: 0.5s;
+  background-color: #6383c2;
+}
