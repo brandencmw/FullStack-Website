@@ -1,46 +1,35 @@
 <%- include("./partials/header.ejs")%> 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg js-primary md-auto">
+    <nav class="navbar navbar-expand-lg js-primary ms-auto">
       <div class="container-fluid">
         <a href="#" class="navbar-brand">Branden Wheeler</a>
 
         <!-- Uncollapsed content -->
-        <ul class="navbar-nav md-auto uncollapsed">
-          <li class="nav-item">
+        <ul class="navbar-nav md-auto">
+          <li class="nav-item hide-small">
             <a href="/" class="nav-link">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item hide-small">
             <a href="#language-section" class="nav-link">Languages</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item hide-small">
             <a href="#tech-section" class="nav-link">Technologies</a>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+            </ul>
+          </li>
         </ul>
-
-        <!-- Hamburger menu button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#additionalPageMenu"
-          aria-controls="additionalPageMenu"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Collapsed Content -->
-        <div class="collapse navbar-collapse" id="additionalPageMenu">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact">Contact</a>
-            </li>
-          </ul>
-        </div>
       </div>
     </nav>
 
@@ -228,9 +217,7 @@
           <div class="card-body">
             <h5 class="card-title">BeautifulSoup4</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
+              A Python library enabling you to easily collect and parse HTML on websites. I personally used this library in my Yahoo Finance API Project to get financial statement data for requested companies.
             </p>
           </div>
         </div>
@@ -243,9 +230,7 @@
           <div class="card-body">
             <h5 class="card-title">Matplotlib</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
+              A Python library that makes it easy to produce visualizations for data sets. I've become familiar with this library through pulling various datasets from the internet and visualizing the contents.
             </p>
           </div>
         </div>
@@ -258,10 +243,7 @@
           <div class="card-body">
             <h5 class="card-title">Pandas</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
-            </p>
+              A Python library used for the manipulation and analysis of data sets. I learned this library by participating in the data science challenge hosted by Lighthouse Labs.
           </div>
         </div>
         <div class="card col-lg-4 col-sm-6">
@@ -273,9 +255,7 @@
           <div class="card-body">
             <h5 class="card-title">Tkinter</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
+              A Python library used for building graphical user interfaces for desktop applications. I used this package to build a front end for my Yahoo Finance API so users could more easily request data.
             </p>
           </div>
         </div>
@@ -288,9 +268,7 @@
           <div class="card-body">
             <h5 class="card-title">Pygame</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
+              A Python library for creating video games including graphics and audio capabilities. I used this library on a development team that was building a platformer game. I created a physics system to control the movement of entities on screen.
             </p>
           </div>
         </div>
@@ -303,9 +281,7 @@
           <div class="card-body">
             <h5 class="card-title">Selenium</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
+              A software used for automating browser functions for the purposes of testing applications. I personally used the Python interface for this sofware to test my Yahoo Finance API by navigating to pages on Yahoo Finance and searching.
             </p>
           </div>
         </div>
@@ -322,9 +298,7 @@
           <div class="card-body">
             <h5 class="card-title">Bootstrap</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
+              A CSS framework for responsive front-end development. I used this framework on this website and my last website using components such as cards, carousels, navbars, and accordians.
             </p>
           </div>
         </div>
@@ -337,9 +311,7 @@
           <div class="card-body">
             <h5 class="card-title">Express.js</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
+              A backend web development framework for Node.js used to perform server processes including post requests and page rendering. I used Express for this website and applications through the Udemy Web Development bootcamp I took.
             </p>
           </div>
         </div>
@@ -352,9 +324,7 @@
           <div class="card-body">
             <h5 class="card-title">Node.js</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
+              A runtime environment for Javascript that is often called a framework. It is used for developing desktop applications in Javascript. I used this technology for developing my reminder Discord bot project.
             </p>
           </div>
         </div>
@@ -367,9 +337,7 @@
           <div class="card-body">
             <h5 class="card-title">React.js</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
+              A frontend web development framework that allows you to create attractive, functional user interfaces through the creation of styled components. I used this framework to create a Google Keeper style application.
             </p>
           </div>
         </div>
@@ -386,9 +354,7 @@
           <div class="card-body">
             <h5 class="card-title">bcrypt</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
+              A Javascript library that uses the bcrypt method of hashing and salting keys based on the blowfish cipher. It allows for multiple salting rounds to further increase security.
             </p>
           </div>
         </div>
@@ -401,9 +367,7 @@
           <div class="card-body">
             <h5 class="card-title">OAuth 2.0</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
+              An authorization framework that allows users to grant third-party websites access to protected resources such as information from their Google or Facebook profiles. By using this, data encryption is handled by a trusted source.
             </p>
           </div>
         </div>
@@ -416,9 +380,7 @@
           <div class="card-body">
             <h5 class="card-title">Passport.js</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
+              Authentication middleware for Node.js applications. Allows for easy implementation of per 500 strategies including Facebook, Github, Google, and many others.
             </p>
           </div>
         </div>

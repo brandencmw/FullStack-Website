@@ -30,12 +30,10 @@ h6 {
 }
 
 @media (max-width: 975px) {
-  .uncollapsed li {
-    display: none;
-  }
   .hide-small {
     display: none;
   }
+
 }
 
 /* Intro section styles */
