@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Branden Wheeler</title>
-    <!-- Stylesheets -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/css/languages.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
-
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-      crossorigin="anonymous"
-    />
-  </head>
-
-  <body>
+<%- include("./partials/header.ejs")%> 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg js-primary">
       <div class="container-fluid">
@@ -69,7 +45,7 @@
     </nav>
 
     <h2 class="heading">Contact me!</h2>
-    <h4 class="heading">I'm friendly I promise</h4>
+    <h4 class="heading">I promise I'm friendly</h4>
     <!-- Contact form -->
     <form action="/" method="POST" class="contact-form">
       <label for="email" class="form-label">Email Address</label>
@@ -90,13 +66,4 @@
       ></textarea>
       <button class="btn btn-primary" type="submit">Submit</button>
     </form>
-
-    <!-- Footer with links -->
-    <footer class="js-primary">
-      <a type="button" class="social-btn"><i class="fab fa-facebook-f"></i></a>
-      <a type="button" class="social-btn"><i class="fab fa-instagram"></i></a>
-      <a type="button" class="social-btn"><i class="fas fa-envelope"></i></a>
-      <p>Copyright 2021 Branden Wheeler</p>
-    </footer>
-  </body>
-</html>
+<%- include("./partials/footer.ejs")%> 
