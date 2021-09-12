@@ -22,17 +22,20 @@
 
 .html-primary * {
   color: #f8f8ff;
+  font-family: "Montserrat";
 }
 
 .html-secondary {
   transition: 0.5s;
   background-color: #ea9172;
+  font-family: "Montserrat";
 }
 
 /* CSS Styles */
 .css-primary {
   transition: 0.5s;
   background-color: #047ec6;
+  font-family: "Montserrat";
 }
 
 .css-primary * {
@@ -42,12 +45,14 @@
 .css-secondary {
   transition: 0.5s;
   background-color: #61c0ee;
+  font-family: "Montserrat";
 }
 
 /* Python Styles */
 .python-primary {
   transition: 0.5s;
   background-color: #fcd441;
+  font-family: "Varta";
 }
 
 .python-primary * {
@@ -57,6 +62,7 @@
 .python-secondary {
   transition: 0.5s;
   background-color: #3474a6;
+  font-family: "Varta";
 }
 
 .python-secondary * {
@@ -67,6 +73,7 @@
 .java-primary {
   transition: 0.5s;
   background-color: #ff686b;
+  font-family: "Mukta";
 }
 
 .java-primary * {
@@ -76,12 +83,14 @@
 .java-secondary {
   transition: 0.5s;
   background-color: #74a4fc;
+  font-family: "Mukta";
 }
 
 /* C Styles */
 .c-primary {
   transition: 0.5s;
   background-color: #044f8f;
+  font-family: "Urbanist";
 }
 
 .c-primary * {
@@ -91,23 +100,27 @@
 .c-secondary {
   transition: 0.5s;
   background-color: #639bd3;
+  font-family: "Urbanist";
 }
 
 /* SQL Styles */
 .sql-primary {
   transition: 0.5s;
   background-color: #cc8c2c;
+  font-family: "Goldman";
 }
 
 .sql-secondary {
   transition: 0.5s;
   background-color: #04648c;
+  font-family: "Goldman";
 }
 
 /* VBA Styles */
 .vba-primary {
   transition: 0.5s;
   background-color: #90247e;
+  font-family: "Times New Roman";
 }
 
 .vba-primary * {
@@ -117,4 +130,5 @@
 .vba-secondary {
   transition: 0.5s;
   background-color: #6383c2;
+  font-family: "Times New Roman";
 }
