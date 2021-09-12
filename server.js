@@ -24,8 +24,8 @@ app.get("/contact", function (req, res) {
 });
 
 app.post("/contact", function(req, res) {
-  
-})
+
+});
 
 app.get("/projects", function(req, res) {
   Project.find(function(err, projects) {
@@ -42,6 +42,8 @@ app.get("/projects/:projectID", function(req, res) {
     if(!err) {
       if(result) {
         res.render("project", { data: result });
+      } else {
+        res.send("The requested page could not be found");
       }
     } else {
       console.log(err);
