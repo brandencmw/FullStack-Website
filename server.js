@@ -23,10 +23,26 @@ app.get("/contact", function (req, res) {
   res.render("contact");
 });
 
+app.post("/contact", function(req, res) {
+  
+})
+
 app.get("/projects", function(req, res) {
   Project.find(function(err, projects) {
     if(!err) {
       res.render("projects", {projects: projects});
+    } else {
+      console.log(err);
+    }
+  });
+});
+
+app.get("/projects/:projectID", function(req, res) {
+  Project.findById(req.params.projectID, function(err, result) {
+    if(!err) {
+      if(result) {
+        res.render("project", { data: result });
+      }
     } else {
       console.log(err);
     }
@@ -46,7 +62,7 @@ app.post("/projects-post", function(req, res) {
   });
   newProject.save();
   res.redirect("/projects");
-})
+});
 
 app.listen(3000, function () {
   console.log("Server running on port 3000");
