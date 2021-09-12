@@ -1,16 +1,20 @@
 <%- include("./partials/header.ejs") %> 
-
-<% project.forEach((project) => { %>
-    <div class="card col-lg-4 col-sm-6">
-        <img
-          src="data:image/<%=project.img.contentType%>;base64,
-          <%=project.img.data.toString('base64')%>"
-          class="card-img-top"
-        />
-        <div class="card-body">
-          <h5 class="card-title"><%=project.title%></h5>
-        </div>
-      </div>
-<% }); %> 
+<div class="projects-container">
+  <h1>My Projects</h1>
+  <div class="row">
+    <% projects.forEach((project) => { %>
+        <div class="card col-lg-4 col-sm-6">
+            <img
+              src="/images/projectHeaders/<%=project.imageName%>" 
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title"><%=project.title%></h5>
+              <button class="btn btn-primary js-primary">Read</button>
+            </div>
+          </div>
+    <% }); %> 
+  </div>
+</div>
 
 <%- include("./partials/footer.ejs") %> 
