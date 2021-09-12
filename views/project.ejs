@@ -1,0 +1,11 @@
+<%- include("./partials/header.ejs") -%>
+<div class="project-heading">
+  <img
+    src="/images/projectHeaders/<%=data.imageName%>"
+    alt="Project Header Image"
+    class="project-img"
+  />
+  <h1><%=data.title%></h1>
+</div>
+<p class="project-content"><%=data.content%></p>
+<%- include("./partials/footer.ejs") -%>
