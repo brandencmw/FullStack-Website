@@ -1,588 +1,555 @@
-<%- include("./partials/header.ejs")%> 
+<%- include("./partials/header.ejs")%>
 
-    <!-- Intro Section -->
-    <div class="intro-container">
+<!-- Intro Section -->
+<div class="intro-container">
+  <img
+    src="/images/profile-picture.jpg"
+    alt="picture of Branden Wheeler"
+    class="img-branden"
+  />
+  <div class="summary-box">
+    <p class="summary-content">
+      Hey there! My name is <span class="name">Branden Wheeler.</span> I'm a
+      3<sup>rd</sup> year business administration and computer science student
+      at <a href="https://www.wlu.ca/">Wilfrid Laurier University</a> currently
+      residing in Waterloo, ON. I have a passion for full stack programming, and
+      I am always on the lookout for new skills, technologies, frameworks, and
+      languages to learn. Keep scrolling to see what I've got so far!
+    </p>
+  </div>
+</div>
+
+<!-- Languages Section -->
+<div class="languages-container js-primary" id="language-section">
+  <h1>My Languages</h1>
+  <div
+    id="languagesCarousel"
+    class="carousel slide carousel-dark"
+    data-bs-ride="carousel"
+    data-bs-interval="false"
+  >
+    <!-- Indicator buttons -->
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#languagesCarousel"
+        data-bs-slide-to="0"
+        class="active hide-small"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#languagesCarousel"
+        data-bs-slide-to="1"
+        class="hide-small"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#languagesCarousel"
+        data-bs-slide-to="2"
+        class="hide-small"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#languagesCarousel"
+        data-bs-slide-to="3"
+        class="hide-small"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#languagesCarousel"
+        data-bs-slide-to="4"
+        class="hide-small"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#languagesCarousel"
+        data-bs-slide-to="5"
+        class="hide-small"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#languagesCarousel"
+        data-bs-slide-to="6"
+        class="hide-small"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#languagesCarousel"
+        data-bs-slide-to="7"
+        class="hide-small"
+      ></button>
+    </div>
+
+    <!-- Carousel Content -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="/images/logos/js-logo.png"
+          class="carousel-img"
+          alt="Javascript Logo"
+        />
+        <h5>JavaScript</h5>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/images/logos/html-logo.png"
+          class="carousel-img"
+          alt="HTML 5 Logo"
+        />
+        <h5>HTML</h5>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/images/logos/css-logo.png"
+          class="carousel-img"
+          alt="CSS 3 Logo"
+        />
+        <h5>CSS</h5>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/logos/python-logo.png" class="carousel-img" alt="" />
+        <h5>Python</h5>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/images/logos/java-logo.png"
+          class="carousel-img"
+          alt="Python Logo"
+        />
+        <h5>Java</h5>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/images/logos/c-logo.png"
+          class="carousel-img"
+          alt="Java Logo"
+        />
+        <h5>C</h5>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/images/logos/sql-logo.png"
+          class="carousel-img"
+          alt="SQL Logo"
+        />
+        <h5>SQL</h5>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/images/logos/vba-logo.png"
+          class="carousel-img"
+          alt="VBA Logo"
+        />
+        <h5>VBA</h5>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#languagesCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <!-- Back and forward buttons -->
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#languagesCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<section class="tech-section" id="tech-section">
+  <div class="row js-secondary">
+    <h2>Python Packages</h2>
+    <div class="card col-lg-4 col-sm-6">
       <img
-        src="/images/profile-picture.jpg"
-        alt="picture of Branden Wheeler"
-        class="img-branden"
+        src="/images/logos/generic-logo.png"
+        class="card-img-top"
+        alt="..."
       />
-      <div class="summary-box">
-        <p class="summary-content">
-          Hey there! My name is <span class="name">Branden Wheeler.</span> I'm a
-          3<sup>rd</sup> year business administration and computer science
-          student at
-          <a href="https://www.wlu.ca/">Wilfrid Laurier University</a> currently
-          residing in Waterloo, ON. I have a passion for full stack programming,
-          and I am always on the lookout for new skills, technologies,
-          frameworks, and languages to learn. Keep scrolling to see what I've
-          got so far!
+      <div class="card-body">
+        <h5 class="card-title">BeautifulSoup4</h5>
+        <p>
+          A Python library enabling you to easily collect and parse HTML on
+          websites. I personally used this library in my Yahoo Finance API
+          Project to get financial statement data for requested companies.
         </p>
       </div>
     </div>
-
-    <!-- Languages Section -->
-    <div class="languages-container js-primary" id="language-section">
-      <h1>My Languages</h1>
-      <div
-        id="languagesCarousel"
-        class="carousel slide carousel-dark"
-        data-bs-ride="carousel"
-        data-bs-interval="false"
-      >
-        <!-- Indicator buttons -->
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#languagesCarousel"
-            data-bs-slide-to="0"
-            class="active hide-small"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#languagesCarousel"
-            data-bs-slide-to="1"
-            class="hide-small"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#languagesCarousel"
-            data-bs-slide-to="2"
-            class="hide-small"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#languagesCarousel"
-            data-bs-slide-to="3"
-            class="hide-small"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#languagesCarousel"
-            data-bs-slide-to="4"
-            class="hide-small"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#languagesCarousel"
-            data-bs-slide-to="5"
-            class="hide-small"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#languagesCarousel"
-            data-bs-slide-to="6"
-            class="hide-small"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#languagesCarousel"
-            data-bs-slide-to="7"
-            class="hide-small"
-          ></button>
-        </div>
-
-        <!-- Carousel Content -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="/images/logos/js-logo.png"
-              class="carousel-img"
-              alt="Javascript Logo"
-            />
-            <h5>JavaScript</h5>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/images/logos/html-logo.png"
-              class="carousel-img"
-              alt="HTML 5 Logo"
-            />
-            <h5>HTML</h5>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/images/logos/css-logo.png"
-              class="carousel-img"
-              alt="CSS 3 Logo"
-            />
-            <h5>CSS</h5>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/images/logos/python-logo.png"
-              class="carousel-img"
-              alt=""
-            />
-            <h5>Python</h5>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/images/logos/java-logo.png"
-              class="carousel-img"
-              alt="Python Logo"
-            />
-            <h5>Java</h5>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/images/logos/c-logo.png"
-              class="carousel-img"
-              alt="Java Logo"
-            />
-            <h5>C</h5>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/images/logos/sql-logo.png"
-              class="carousel-img"
-              alt="SQL Logo"
-            />
-            <h5>SQL</h5>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/images/logos/vba-logo.png"
-              class="carousel-img"
-              alt="VBA Logo"
-            />
-            <h5>VBA</h5>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#languagesCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-
-          <!-- Back and forward buttons -->
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#languagesCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img
+        src="/images/logos/matplotlib-logo.png"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Matplotlib</h5>
+        <p>
+          A Python library that makes it easy to produce visualizations for data
+          sets. I've become familiar with this library through pulling various
+          datasets from the internet and visualizing the contents.
+        </p>
       </div>
     </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img src="/images/logos/pandas-logo.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Pandas</h5>
+        <p>
+          A Python library used for the manipulation and analysis of data sets.
+          I learned this library by participating in the data science challenge
+          hosted by Lighthouse Labs.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img
+        src="/images/logos/generic-logo.png"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Tkinter</h5>
+        <p>
+          A Python library used for building graphical user interfaces for
+          desktop applications. I used this package to build a front end for my
+          Yahoo Finance API so users could more easily request data.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img src="/images/logos/pygame-logo.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Pygame</h5>
+        <p>
+          A Python library for creating video games including graphics and audio
+          capabilities. I used this library on a development team that was
+          building a platformer game. I created a physics system to control the
+          movement of entities on screen.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img
+        src="/images/logos/selenium-logo.png"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Selenium</h5>
+        <p>
+          A software used for automating browser functions for the purposes of
+          testing applications. I personally used the Python interface for this
+          sofware to test my Yahoo Finance API by navigating to pages on Yahoo
+          Finance and searching.
+        </p>
+      </div>
+    </div>
+  </div>
 
-    <section class="tech-section" id="tech-section">
-      <div class="row js-secondary">
-        <h2>Python Packages</h2>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/generic-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">BeautifulSoup4</h5>
-            <p>
-              A Python library enabling you to easily collect and parse HTML on websites. I personally used this library in my Yahoo Finance API Project to get financial statement data for requested companies.
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/matplotlib-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Matplotlib</h5>
-            <p>
-              A Python library that makes it easy to produce visualizations for data sets. I've become familiar with this library through pulling various datasets from the internet and visualizing the contents.
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/pandas-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Pandas</h5>
-            <p>
-              A Python library used for the manipulation and analysis of data sets. I learned this library by participating in the data science challenge hosted by Lighthouse Labs.
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/generic-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Tkinter</h5>
-            <p>
-              A Python library used for building graphical user interfaces for desktop applications. I used this package to build a front end for my Yahoo Finance API so users could more easily request data.
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/pygame-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Pygame</h5>
-            <p>
-              A Python library for creating video games including graphics and audio capabilities. I used this library on a development team that was building a platformer game. I created a physics system to control the movement of entities on screen.
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/selenium-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Selenium</h5>
-            <p>
-              A software used for automating browser functions for the purposes of testing applications. I personally used the Python interface for this sofware to test my Yahoo Finance API by navigating to pages on Yahoo Finance and searching.
-            </p>
-          </div>
-        </div>
+  <div class="row js-primary">
+    <h2>Frameworks</h2>
+    <div class="card col-lg-4 col-sm-6">
+      <img
+        src="/images/logos/bootstrap-logo.png"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Bootstrap</h5>
+        <p>
+          A CSS framework for responsive front-end development. I used this
+          framework on this website and my last website using components such as
+          cards, carousels, navbars, and accordians.
+        </p>
       </div>
+    </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img
+        src="/images/logos/express-logo.png"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Express.js</h5>
+        <p>
+          A backend web development framework for Node.js used to perform server
+          processes including post requests and page rendering. I used Express
+          for this website and applications through the Udemy Web Development
+          bootcamp I took.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img src="/images/logos/nodejs-logo.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Node.js</h5>
+        <p>
+          A runtime environment for Javascript that is often called a framework.
+          It is used for developing desktop applications in Javascript. I used
+          this technology for developing my reminder Discord bot project.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img src="/images/logos/react-logo.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">React.js</h5>
+        <p>
+          A frontend web development framework that allows you to create
+          attractive, functional user interfaces through the creation of styled
+          components. I used this framework to create a Google Keeper style
+          application.
+        </p>
+      </div>
+    </div>
+  </div>
 
-      <div class="row js-primary">
-        <h2>Frameworks</h2>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/bootstrap-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Bootstrap</h5>
-            <p>
-              A CSS framework for responsive front-end development. I used this framework on this website and my last website using components such as cards, carousels, navbars, and accordians.
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/express-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Express.js</h5>
-            <p>
-              A backend web development framework for Node.js used to perform server processes including post requests and page rendering. I used Express for this website and applications through the Udemy Web Development bootcamp I took.
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/nodejs-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Node.js</h5>
-            <p>
-              A runtime environment for Javascript that is often called a framework. It is used for developing desktop applications in Javascript. I used this technology for developing my reminder Discord bot project.
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/react-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">React.js</h5>
-            <p>
-              A frontend web development framework that allows you to create attractive, functional user interfaces through the creation of styled components. I used this framework to create a Google Keeper style application.
-            </p>
-          </div>
-        </div>
+  <div class="row js-secondary">
+    <h2>Security and Authentication</h2>
+    <div class="card col-lg-4 col-sm-6">
+      <img
+        src="/images/logos/generic-logo.png"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">bcrypt</h5>
+        <p>
+          A Javascript library that uses the bcrypt method of hashing and
+          salting keys based on the blowfish cipher. It allows for multiple
+          salting rounds to further increase security.
+        </p>
       </div>
+    </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img src="/images/logos/oauth-logo.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">OAuth 2.0</h5>
+        <p>
+          An authorization framework that allows users to grant third-party
+          websites access to protected resources such as information from their
+          Google or Facebook profiles. By using this, data encryption is handled
+          by a trusted source.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img
+        src="/images/logos/passport-logo.png"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Passport.js</h5>
+        <p>
+          Authentication middleware for Node.js applications. Allows for easy
+          implementation of per 500 strategies including Facebook, Github,
+          Google, and many others.
+        </p>
+      </div>
+    </div>
+  </div>
 
-      <div class="row js-secondary">
-        <h2>Security and Authentication</h2>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/generic-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">bcrypt</h5>
-            <p>
-              A Javascript library that uses the bcrypt method of hashing and salting keys based on the blowfish cipher. It allows for multiple salting rounds to further increase security.
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/oauth-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">OAuth 2.0</h5>
-            <p>
-              An authorization framework that allows users to grant third-party websites access to protected resources such as information from their Google or Facebook profiles. By using this, data encryption is handled by a trusted source.
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/passport-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Passport.js</h5>
-            <p>
-              Authentication middleware for Node.js applications. Allows for easy implementation of per 500 strategies including Facebook, Github, Google, and many others.
-            </p>
-          </div>
-        </div>
+  <div class="row js-primary">
+    <h2>Database Software</h2>
+    <div class="card col-lg-4 col-sm-6">
+      <img
+        src="/images/logos/dynamodb-logo.png"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">DynamoDB</h5>
+        <p>
+          A NoSQL database managed through Amazon Web services that allows of
+          the storage of information in a document structure similar to JSON. I
+          used this database to store data for the Python version of my reminder
+          Discord bot.
+        </p>
       </div>
+    </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img
+        src="/images/logos/mongodb-logo.png"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">MongoDB</h5>
+        <p>
+          A NoSQL database commonly used in web development that stores
+          information in a document structure similar to JSON. I learned to use
+          this database through developing several applications in a web
+          development bootcamp.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img
+        src="/images/logos/mongoose-logo.png"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Mongoose</h5>
+        <p>
+          A Javascript library used to manage the schemas and documents created
+          in Node.js and their storage using mongoDB. I learned to use this
+          library through developing applications in a web development bootcamp.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img
+        src="/images/logos/firestore-logo.png"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Google Firestore</h5>
+        <p>
+          A NoSQL database managed through Google Firebase that allows for the
+          storage of information in a document structure. I used this database
+          to store data for the Javascript version of my Discord reminder bot.
+        </p>
+      </div>
+    </div>
+  </div>
 
-      <div class="row js-primary">
-        <h2>Database Software</h2>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/dynamodb-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">DynamoDB</h5>
-            <p>
-              A NoSQL database managed through Amazon Web services that allows of the storage of information in a document structure similar to JSON. I used this database to store data for the Python version of my reminder Discord bot. 
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/mariadb-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">MariaDB</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/mongodb-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">MongoDB</h5>
-            <p>
-              A NoSQL database commonly used in web development that stores information in a document structure similar to JSON. I learned to use this database through developing several applications in a web development bootcamp.
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/mongoose-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Mongoose</h5>
-            <p>
-              A Javascript library used to manage the schemas and documents created in Node.js and their storage using mongoDB. I learned to use this library through developing applications in a web development bootcamp.
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/firestore-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Google Firestore</h5>
-            <p>
-              A NoSQL database managed through Google Firebase that allows for the storage of information in a document structure. I used this database to store data for the Javascript version of my Discord reminder bot.
-            </p>
-          </div>
-        </div>
+  <div class="row js-secondary">
+    <h2>IDEs / Code Editors</h2>
+    <div class="card col-lg-4 col-sm-6">
+      <img src="/images/logos/atom-logo.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Atom</h5>
+        <p></p>
       </div>
+    </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img
+        src="/images/logos/eclipse-logo.png"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Eclipse</h5>
+        <p></p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img src="/images/logos/vscode-logo.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">VSCode</h5>
+        <p></p>
+      </div>
+    </div>
+  </div>
 
-      <div class="row js-secondary">
-        <h2>IDEs / Code Editors</h2>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/atom-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Atom</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/eclipse-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Eclipse</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/vscode-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">VSCode</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
-            </p>
-          </div>
-        </div>
+  <div class="row js-primary">
+    <h2>Cloud Hosting</h2>
+    <div class="card col-lg-4 col-sm-6">
+      <img src="/images/logos/aws-logo.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Amazon Web Services</h5>
+        <p>
+          A cloud computing platform hosted on Amazon servers that offers a
+          plethora of services on both free and premium tiers. I used AWS
+          servers in the Python version of my Discord reminder bot to store
+          data.
+        </p>
       </div>
-
-      <div class="row js-primary">
-        <h2>Cloud Hosting</h2>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/aws-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Amazon Web Services</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/firestore-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Google FireBase</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/heroku-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Heroku</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
-            </p>
-          </div>
-        </div>
+    </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img
+        src="/images/logos/firestore-logo.png"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Google FireBase</h5>
+        <p>
+          A cloud computing platform hosted on Google servers that offers a
+          variety of services including databases and cloud functions. I used
+          Google FireBase servers in the JavaScript version of my Discord
+          reminder bot to store data.
+        </p>
       </div>
-      <div class="row js-secondary">
-        <h2>Other Software/Technologies</h2>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/ejs-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">EJS</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/figma-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Figma</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/postman-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Postman</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-sm-6">
-          <img
-            src="/images/logos/robo3t-logo.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Robo3T</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
-              fermentum iaculis eu non diam.
-            </p>
-          </div>
-        </div>
+    </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img src="/images/logos/heroku-logo.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Heroku</h5>
+        <p>
+          A cloud platform that allows developers to build, host, and operate
+          their software entirely on the cloud instead of locally. It supports a
+          wide array of programming languages. This website is hosted using
+          Heroku until I can get a domain.
+        </p>
       </div>
-    </section>
-<%- include("./partials/footer.ejs")-%> 
+    </div>
+  </div>
+  <div class="row js-secondary">
+    <h2>Other Software/Technologies</h2>
+    <div class="card col-lg-4 col-sm-6">
+      <img src="/images/logos/ejs-logo.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">EJS</h5>
+        <p>
+          A templating language that allows you to embed JavaScript into your
+          HTML including repetition and control structures. I used this to
+          create header and footer partial files as well as to generate cards
+          for my projects.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img src="/images/logos/figma-logo.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Figma</h5>
+        <p>
+          A web-based graphics editing and prototyping tool that is commonly
+          used to create wireframes for websites. I use this site before I make
+          any new website to determine how I want to lay it out before I begin
+          coding.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img
+        src="/images/logos/postman-logo.png"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Postman</h5>
+        <p>
+          A platform used in the development of APIs. It allows you to make get,
+          delete, put, patch, and many other requests to your server to help you
+          test how data is requested and returned. I use this to test any API I
+          build.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-sm-6">
+      <img src="/images/logos/robo3t-logo.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Robo3T</h5>
+        <p>
+          A graphical user interface for MongoDB that makes it easier to quickly
+          see the data in your databse and perform simple commands. I like using
+          this but I prefer using the command line shell when I'm developing.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<%- include("./partials/footer.ejs")-%>

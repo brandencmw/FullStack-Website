@@ -10,8 +10,11 @@
       />
       <div class="card-body">
         <h5 class="card-title"><%=project.title%></h5>
-        <button class="btn btn-primary js-primary">
-          <a href="/projects/<%=project._id%>">Read</a>
+        <button
+          onclick="location.href='/projects/<%=project._id%>'"
+          class="btn js-primary project-btn"
+        >
+          Read
         </button>
       </div>
     </div>

@@ -6,6 +6,7 @@
 }
 
 .js-primary * {
+  transition: 0.5s;
   color: #323330;
 }
 
@@ -21,6 +22,7 @@
 }
 
 .html-primary * {
+  transition: 0.5s;
   color: #f8f8ff;
   font-family: "Montserrat";
 }
@@ -39,6 +41,7 @@
 }
 
 .css-primary * {
+  transition: 0.5s;
   color: #f8f8ff;
 }
 
@@ -56,6 +59,7 @@
 }
 
 .python-primary * {
+  transition: 0.5s;
   color: #323330;
 }
 
@@ -77,6 +81,7 @@
 }
 
 .java-primary * {
+  transition: 0.5s;
   color: #323330;
 }
 
@@ -94,6 +99,7 @@
 }
 
 .c-primary * {
+  transition: 0.5s;
   color: #f8f8ff;
 }
 
@@ -110,6 +116,16 @@
   font-family: "Goldman";
 }
 
+.sql-primary * {
+  transition: 0.5s;
+  color: #f8f8ff;
+}
+
+.sql-secondary * {
+  color: #f8f8ff;
+  transition: 0.5s;
+}
+
 .sql-secondary {
   transition: 0.5s;
   background-color: #04648c;
@@ -124,6 +140,7 @@
 }
 
 .vba-primary * {
+  transition: 0.5s;
   color: #f8f8ff;
 }
 

@@ -26,14 +26,30 @@ h6 {
 .navbar-brand {
   font-size: 1.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: inline-block;
+  position: relative;
+}
+
+.navbar-brand:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f8f8ff;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.navbar-brand:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .nav-link {
   margin-left: 5%;
-}
-
-.navbar-collapse {
-  text-align: right;
 }
 
 .container-fluid {
@@ -146,6 +162,7 @@ footer {
 
 .social-btn {
   margin: 0 10px;
+  font-size: 1.25em;
 }
 
 /* Contact Page Styles */
@@ -184,4 +201,8 @@ footer {
 .project-content {
   margin: 0 100px;
   line-height: 2rem;
+}
+
+.project-btn {
+  color: #323330;
 }
