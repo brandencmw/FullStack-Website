@@ -13,6 +13,9 @@
   },
   "author": "Branden Wheeler",
   "license": "ISC",
+  "engines": {
+    "node": "14.17.6"
+  },
   "bugs": {
     "url": "https://github.com/brandencmw/FullStack-Website/issues"
   },
