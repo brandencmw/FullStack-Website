@@ -48,10 +48,6 @@ const Project = mongoose.model("Project", projectSchema);
 //   res.redirect("/");
 // });
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client/build", "index.html"));
-});
-
 app.get("/", function (req, res) {
   res.render("home");
 });
