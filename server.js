@@ -3,11 +3,16 @@ const mongoose = require("mongoose");
 const express = require("express");
 const ejs = require("ejs");
 
+// Express config
 const app = express();
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 
+// Mongoose config
 const password = process.env.MONGO_PASS;
 mongoose.connect(
   "mongodb+srv://admin-branden:" +
@@ -21,16 +26,13 @@ const projectSchema = mongoose.Schema({
 });
 const Project = mongoose.model("Project", projectSchema);
 
+// TO ADD: Contact page routing
 // const contactSchema = mongoose.Schema({
 //   email: String,
 //   title: String,
 //   content: String,
 // });
 // const Contact = mongoose.model("Contact", contactSchema);
-
-app.get("/", function (req, res) {
-  res.render("home");
-});
 
 // app.get("/contact", function (req, res) {
 //   res.render("contact");
@@ -45,6 +47,14 @@ app.get("/", function (req, res) {
 //   contact.save();
 //   res.redirect("/");
 // });
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client/build", "index.html"));
+});
+
+app.get("/", function (req, res) {
+  res.render("home");
+});
 
 app.get("/projects", function (req, res) {
   Project.find(function (err, projects) {
