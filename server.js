@@ -26,28 +26,6 @@ const projectSchema = mongoose.Schema({
 });
 const Project = mongoose.model("Project", projectSchema);
 
-// TO ADD: Contact page routing
-// const contactSchema = mongoose.Schema({
-//   email: String,
-//   title: String,
-//   content: String,
-// });
-// const Contact = mongoose.model("Contact", contactSchema);
-
-// app.get("/contact", function (req, res) {
-//   res.render("contact");
-// });
-
-// app.post("/contact", function (req, res) {
-//   const contact = new Contact({
-//     email: req.body.email,
-//     title: req.body.title,
-//     content: req.body.content,
-//   });
-//   contact.save();
-//   res.redirect("/");
-// });
-
 app.get("/", function (req, res) {
   res.render("home");
 });

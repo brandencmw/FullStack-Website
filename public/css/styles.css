@@ -73,7 +73,7 @@ h6 {
 .summary-box {
   width: auto;
   height: auto;
-  background-color: #ecebec;
+  background-color: #f8f8ff;
   border: 5px solid #323330;
   border-radius: 25px;
   margin: 5%;
@@ -141,9 +141,7 @@ h6 {
   align-items: center;
   background-color: #f8f8ff;
   border-radius: 25px;
-}
-
-.card * {
+  box-shadow: 15px 15px 8px -10px rgba(34, 36, 37, 0.5);
   color: #323330;
 }
 
