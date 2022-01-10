@@ -20,8 +20,9 @@ h6 {
 
 /* Navbar styles */
 .navbar {
-  padding: 1% 100px;
+  padding: 1% 50px;
   width: 100%;
+  box-shadow: 0 6px 4px -2px rgba(34, 36, 37, 0.5);
 }
 .navbar-brand {
   font-size: 1.5rem;
@@ -77,6 +78,7 @@ h6 {
   border: 5px solid #323330;
   border-radius: 25px;
   margin: 5%;
+  box-shadow: 15px 15px 8px -10px rgba(34, 36, 37, 0.5);
 }
 
 .summary-content {
@@ -174,12 +176,15 @@ footer {
 
 .heading {
   text-align: center;
-  margin-top: 5px;
+}
+
+.row {
+  padding-top: 0;
 }
 
 /* Project Page Styles */
 .projects-container {
-  margin: 10px 0;
+  margin: 40px 0;
   text-align: center;
 }
 

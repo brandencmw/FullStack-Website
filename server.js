@@ -26,6 +26,7 @@ const projectSchema = mongoose.Schema({
 });
 const Project = mongoose.model("Project", projectSchema);
 
+
 app.get("/", function (req, res) {
   res.render("home");
 });
